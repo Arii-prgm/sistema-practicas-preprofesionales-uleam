@@ -1,0 +1,42 @@
+SISTEMA DE PRÁCTICAS PREPROFESIONALES ULEAM - DEMOSTRACIÓN
+
+ARCHIVOS:
+index.html: estructura de la página y del inicio de sesión.
+style.css: diseño visual adaptable a celular y computador.
+script.js: roles, menús, formularios, validaciones y guardado local.
+
+CÓMO EJECUTAR:
+1. Extraer la carpeta completa del archivo ZIP.
+2. Abrir la carpeta en Visual Studio Code.
+3. Clic derecho en index.html > Open with Live Server.
+   También se puede abrir index.html directamente en Chrome/Edge.
+4. Elegir Estudiante, Tutor académico o Administrador.
+5. Contraseña para los tres perfiles: 1234.
+
+PRUEBA RECOMENDADA:
+Estudiante > Enviar evidencias > completar formulario con un PDF/JPG/PNG.
+Cerrar sesión > Tutor > Evidencias recibidas > Aceptar.
+Tutor > Registro de actividades y horas > seleccionar evidencia > registrar horas.
+Cerrar sesión > Estudiante > Mis actividades y horas > comprobar total actualizado.
+
+OTRA PRUEBA:
+Estudiante > Solicitudes y novedades > enviar cambio de empresa.
+Tutor > Solicitudes y novedades > Remitir.
+Administrador > Solicitudes importantes > Aprobar.
+Estudiante > Mi práctica > verificar empresa nueva.
+
+ADMINISTRACIÓN:
+Administrador > Usuarios y asignaciones (dos pestañas).
+Administrador > Períodos (crear, activar/desactivar e historial).
+Tutor > Evaluaciones e informes (evaluación, generar informe, impresión PDF).
+
+DATOS:
+Se guardan en localStorage del navegador. El botón Reiniciar datos de prueba
+restablece la demostración. Los archivos adjuntos se representan por su
+nombre; no se almacena su contenido. Los PDF de reportes se obtienen con
+la función de impresión del navegador (Guardar como PDF).
+
+LÍMITES:
+No es un sistema de producción. No existe backend, base de datos remota,
+usuarios reales ni control de acceso seguro. Los permisos son simulados.
+No cargar información sensible ni documentos institucionales auténticos.

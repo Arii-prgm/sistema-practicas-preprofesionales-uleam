@@ -1,0 +1,174 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>ULEAM | Gestión de Prácticas Preprofesionales</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- PANTALLA DE INICIO DE SESIÓN -->
+    <section id="login" class="login-screen">
+
+        <div class="login-card">
+
+            <div class="logo-big">
+                <img
+                    src="LOGO-ULEAM-HORIZONTAL.png"
+                    alt="Logo oficial de la ULEAM"
+                    class="logo-login"
+                >
+            </div>
+
+            <h1>Gestión de Prácticas Preprofesionales</h1>
+
+            <p class="muted">
+                Ingreso de demostración
+            </p>
+
+            <form id="loginForm">
+
+                <label for="loginRole">Ingresar como</label>
+
+                <select id="loginRole" required>
+                    <option value="estudiante">Estudiante</option>
+                    <option value="tutor">Tutor académico</option>
+                    <option value="admin">Administrador</option>
+                </select>
+
+                <label for="loginPass">
+                    Contraseña de demostración
+                </label>
+
+                <input
+                    id="loginPass"
+                    type="password"
+                    placeholder="1234"
+                    required
+                >
+
+                <button class="btn primary wide" type="submit">
+                    Ingresar al sistema →
+                </button>
+
+            </form>
+
+            <p class="hint">
+                 <strong></strong>.
+            </p>
+
+        </div>
+
+    </section>
+
+    <!-- SISTEMA PRINCIPAL -->
+    <div id="app" class="app hidden">
+
+        <!-- MENÚ LATERAL -->
+        <aside class="sidebar">
+
+            <!-- LOGO INSTITUCIONAL -->
+            <div class="brand">
+                <img
+                    src="LOGO-ULEAM-HORIZONTAL.png"
+                    alt="Universidad Laica Eloy Alfaro de Manabí"
+                    class="logo-sidebar"
+                >
+
+                <p class="brand-description">
+                    Gestión de Prácticas<br>
+                    Preprofesionales
+                </p>
+            </div>
+
+            <!-- ROL DEL USUARIO -->
+            <div class="role-label" id="roleLabel"></div>
+
+            <!-- MENÚ DINÁMICO GENERADO POR JAVASCRIPT -->
+            <nav
+                id="menu"
+                aria-label="Navegación principal"
+            ></nav>
+
+            <!-- OPCIONES INFERIORES -->
+            <div class="side-bottom">
+
+                <button
+                    class="nav-item"
+                    id="resetDemo"
+                    type="button"
+                >
+                    ↻ Reiniciar datos de prueba
+                </button>
+
+                <button
+                    class="nav-item"
+                    id="logout"
+                    type="button"
+                >
+                    ↪ Cerrar sesión
+                </button>
+
+                <small>
+                    Universidad Laica Eloy Alfaro de Manabí
+                </small>
+
+            </div>
+
+        </aside>
+
+        <!-- CONTENIDO PRINCIPAL -->
+        <div class="main-area">
+
+            <!-- BARRA SUPERIOR -->
+            <header class="topbar">
+
+                <span>
+                    Prácticas preprofesionales
+                    <span class="muted">›</span>
+                    <b id="breadcrumb"></b>
+                </span>
+
+                <div class="account">
+
+                    <span>●</span>
+
+                    <div>
+                        <b id="accountName"></b>
+                        <small id="accountRole"></small>
+                    </div>
+
+                </div>
+
+            </header>
+
+            <!-- AQUÍ JAVASCRIPT MUESTRA CADA PANEL -->
+            <main id="content" class="content"></main>
+
+            <!-- PIE DE PÁGINA -->
+            <footer>
+                ULEAM · Prototipo académico HTML, CSS y JavaScript
+            </footer>
+
+        </div>
+
+    </div>
+
+    <!-- MENSAJES Y NOTIFICACIONES -->
+    <div
+        id="toast"
+        role="status"
+        aria-live="polite"
+    ></div>
+
+    <!-- FUNCIONALIDADES DEL SISTEMA -->
+    <script src="script.js" defer></script>
+
+</body>
+</html>
+
